@@ -8,7 +8,7 @@
   "scripts": {
     "doctest": "markdown-doctest",
     "dev": "grunt dev-server",
-    "server": "dev-server"
+    "build": "grunt default"
   },
   "devDependencies": {
     "assemble": "^0.4.37",
