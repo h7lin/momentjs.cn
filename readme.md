@@ -1,16 +1,15 @@
-## Installing
+
+## 本地开发
 
 ```
-./compile.sh
+npm run dev
 ```
 
-## Running locally
+## 异常问题 
+
+项目依赖 node-sass，若是在 Windows 平台下，可能会因缺少 Visual C++ Build Tools 等其他依赖而编译失败，可以尝试淘宝已编译好的包：
 
 ```
-grunt server
+npm install -g mirror-config-china --registry=http://registry.npm.taobao.org
+npm install node-sass
 ```
-Note: the command line will show the web server running over `http://0.0.0.0:6060`. If this URL doesn't work, navigate to `http://localhost:6060`.
-
-## PRs
-
-Please make pull requests against the `master` branch.

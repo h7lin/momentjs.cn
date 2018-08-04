@@ -6,7 +6,9 @@
   "homepage": "https://momentjs.com",
   "author": "Tim Wood <washwithcare@gmail.com> (http://timwoodcreates.com/)",
   "scripts": {
-    "doctest": "markdown-doctest"
+    "doctest": "markdown-doctest",
+    "dev": "grunt dev-server",
+    "server": "dev-server"
   },
   "devDependencies": {
     "assemble": "^0.4.37",

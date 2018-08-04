@@ -2,7 +2,7 @@ module.exports = function(grunt) {
 	grunt.config('connect.dev-server', {
 		options: {
 			port: 6060,
-			hostname: '*',
+			hostname: 'localhost',
 			base: 'build',
 			livereload: 36060,
 			open: true

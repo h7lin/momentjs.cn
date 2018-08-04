@@ -1,6 +1,6 @@
 (function(){
 
-    var currentLang = 'en',
+    var currentLang = 'zh-cn',
         snippets = [];
 
     function createSnippets () {

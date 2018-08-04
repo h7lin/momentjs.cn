@@ -1,6 +1,6 @@
 <div class="docs">
 	<div class="docs-nav">
-		<div class="docs-nav-search">
+		{{!-- <div class="docs-nav-search">
 			<label for="search" class="docs-nav-search-label">Search the docs</label>
 			<input type="text" class="docs-nav-search-input" id="search" placeholder="Search…">
 			<link rel="stylesheet" href="//cdn.jsdelivr.net/docsearch.js/2/docsearch.min.css" />
@@ -13,7 +13,7 @@
 	    		debug: false // set to `true` if you want to inspect the dropdown menu's CSS
 			  });
 			</script>
-		</div>
+		</div> --}}
 		<div class="docs-nav-links">
 			{{#each docs}}
 				<div class="docs-nav-section">
@@ -44,7 +44,7 @@
 								<span>{{ versionDescription version }}</span>
 							{{/if}}
 						</h3>
-						<a class="docs-method-edit" href="{{ edit }}" target="_blank">edit</a>
+						<a class="docs-method-edit" href="{{ edit }}" target="_blank">编辑</a>
 					{{/isnt}}
 					<div class="docs-method-prose">
 						{{#if signature}}
