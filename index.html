@@ -2,18 +2,13 @@
 <html>
 	<head>
 		<meta charset="utf-8" />
-
-		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<meta name="description" content="Moment.js 是一个 JavaScript 日期处理类库，用于解析、检验、操作、以及显示日期">
+		
 		<link rel="stylesheet" href="/static/css/style.css" />
 		<link rel="shortcut icon" href="/static/img/moment-favicon.png" />
 
-		<title>Moment.js | Home</title>
-		<script>
-			window.ga=window.ga||function(){(ga.q=ga.q||[]).push(arguments)};ga.l=+new Date;
-			ga('create', 'UA-10641787-5', 'auto');
-			ga('send', 'pageview');
-		</script>
-		<script async src='https://www.google-analytics.com/analytics.js'></script>
+		<title>Moment.js 中文网</title>
+		
 	</head>
 
 	<body class="is-moment">
@@ -34,24 +29,17 @@
 						</svg>
 						Moment<br/>Timezone
 					</a>
-                                        <a class="nav-project nav-project-luxon" href="https://moment.github.io/luxon/">
-                                          <svg width="40px" height="40px" viewBox="0 0 40 40">
-                                            <g transform="translate(1.000000, 1.000000)">
-                                              <ellipse stroke-width="3" fill-rule="nonzero" cx="19" cy="19" ry="18.5" rx="18.5"/>
-                                              <path fill-rule="evenodd" d="M19,35 C27.836556,35 35,27.836556 35,19 C35,10.163444 27.836556,3 19,3 C10.163444,3 3,10.163444 3,19 C3,27.836556 10.163444,35 19,35 Z M22.104874,17.183315 L22.104874,13.7025247 C23.2618233,13.6333699 24.1590492,12.6882547 24.1590492,11.5587267 L24.1590492,11.143798 C24.1590492,9.94511526 23.1673784,9 21.9632068,9 L16.0604044,9 C14.8326216,9 13.864562,9.96816685 13.864562,11.143798 L13.864562,11.5587267 C13.864562,12.6882547 14.7853991,13.6333699 15.9187372,13.7025247 L15.9187372,17.183315 L10.4645478,25.5510428 C9.87426762,26.4500549 9.85065641,27.5565313 10.370103,28.5016465 C10.8895496,29.4467618 11.8812204,30 12.967336,30 L25.032664,30 C26.1423908,30 27.1104504,29.4467618 27.629897,28.5016465 C28.1493436,27.5565313 28.1257324,26.4500549 27.5354522,25.5510428 L22.104874,17.183315 Z"/>
-                                            </g>
-                                          </svg>
-                                          Luxon</a>
+                                        
 				</div>
 				<div class="nav-pages">
 					
-						<a href="." class="active">Home</a>
+						<a href="." class="active">首页</a>
 					
-						<a href="docs/" >Docs</a>
+						<a href="docs/" >文档</a>
 					
-						<a href="guides/" >Guides</a>
+						<a href="guides/" >指南</a>
 					
-						<a href="tests/" >Tests</a>
+						<a href="tests/" >测试</a>
 					
 					<a href="https://github.com/moment/moment/">GitHub</a>
 				</div>
@@ -73,7 +61,7 @@
 		</div>
 		<div class="hero-title">
 			<h1>Moment.js <span>2.22.2</span></h1>
-			<h2>Parse, validate, manipulate, and display dates and times in JavaScript.</h2>
+			<h2>JavaScript 日期处理类库</h2>
 		</div>
 	</div>
 </header>
@@ -81,7 +69,7 @@
 
 <div class="builds">
 	<div class="builds-download">
-		<h3>Download</h3>
+		<h3>下载</h3>
 		<a class="builds-button builds-button-source" href="/downloads/moment.js">
 			moment.js
 		</a>
@@ -90,15 +78,15 @@
 			<span class="filesize">16.4k</span>
 		</a>
 		<a class="builds-button builds-button-source" href="/downloads/moment-with-locales.js">
-			moment-with-locales.js
+			moment-多语言支持.js
 		</a>
 		<a class="builds-button builds-button-gzipped" href="/downloads/moment-with-locales.min.js">
-			moment-with-locales.min.js
+			moment-多语言支持.min.js
 			<span class="filesize">66.4k</span>
 		</a>
 	</div>
 	<div class="builds-packages">
-		<h3>Install</h3>
+		<h3>安装</h3>
 		<pre><code>npm install moment --save   <span class="comment"># npm</span>
 yarn add moment             <span class="comment"># Yarn</span>
 Install-Package Moment.js   <span class="comment"># NuGet</span>
@@ -111,19 +99,19 @@ bower install moment --save <span class="comment"># bower (deprecated)</span>
 
 <div class="page-moment-index">
 
-<h3 id="format-dates">Format Dates</h3>
+<h3 id="-">日期格式化</h3>
 <pre><code class="language-js">moment().format(<span class="string">'MMMM Do YYYY, h:mm:ss a'</span>);
 moment().format(<span class="string">'dddd'</span>);
 moment().format(<span class="string">"MMM Do YY"</span>);
 moment().format(<span class="string">'YYYY [escaped] YYYY'</span>);
 moment().format();</code></pre>
-<h3 id="relative-time">Relative Time</h3>
+<h3 id="-">相对时间</h3>
 <pre><code class="language-js">moment(<span class="string">"20111031"</span>, <span class="string">"YYYYMMDD"</span>).fromNow();
 moment(<span class="string">"20120620"</span>, <span class="string">"YYYYMMDD"</span>).fromNow();
 moment().startOf(<span class="string">'day'</span>).fromNow();
 moment().endOf(<span class="string">'day'</span>).fromNow();
 moment().startOf(<span class="string">'hour'</span>).fromNow();</code></pre>
-<h3 id="calendar-time">Calendar Time</h3>
+<h3 id="-">日历时间</h3>
 <pre><code class="language-js">moment().subtract(<span class="number">10</span>, <span class="string">'days'</span>).calendar();
 moment().subtract(<span class="number">6</span>, <span class="string">'days'</span>).calendar();
 moment().subtract(<span class="number">3</span>, <span class="string">'days'</span>).calendar();
@@ -132,7 +120,7 @@ moment().calendar();
 moment().add(<span class="number">1</span>, <span class="string">'days'</span>).calendar();
 moment().add(<span class="number">3</span>, <span class="string">'days'</span>).calendar();
 moment().add(<span class="number">10</span>, <span class="string">'days'</span>).calendar();</code></pre>
-<h3 id="multiple-locale-support">Multiple Locale Support</h3>
+<h3 id="-">多语言支持</h3>
 <pre><code class="language-js">moment.locale();
 moment().format(<span class="string">'LT'</span>);
 moment().format(<span class="string">'LTS'</span>);
@@ -240,7 +228,7 @@ moment().format(<span class="string">'llll'</span>);</code></pre>
 			Central Atlas Tamazight Latin
 		</div>
 	
-		<div class="button " data-locale="zh-cn">
+		<div class="button active" data-locale="zh-cn">
 			Chinese (China)
 		</div>
 	
@@ -300,7 +288,7 @@ moment().format(<span class="string">'llll'</span>);</code></pre>
 			English (United Kingdom)
 		</div>
 	
-		<div class="button active" data-locale="en">
+		<div class="button " data-locale="en">
 			English (United States)
 		</div>
 	
@@ -654,7 +642,7 @@ moment().format(<span class="string">'llll'</span>);</code></pre>
 			<p>Moment.js is freely distributable under the terms of the MIT license.</p>
 		</footer>
 
-		<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+		<script src="//cdn.staticfile.org/jquery/1.8.2/jquery.min.js"></script>
 		<script src="/static/js/global.js"></script>
 		
 			<script src="/static/js/core-home.js"></script>
