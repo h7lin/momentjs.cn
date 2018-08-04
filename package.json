@@ -8,7 +8,8 @@
   "scripts": {
     "doctest": "markdown-doctest",
     "dev": "grunt dev-server",
-    "build": "grunt default"
+    "build": "grunt default",
+    "publish": "node scripts/publish"
   },
   "devDependencies": {
     "assemble": "^0.4.37",
@@ -28,6 +29,7 @@
     "markdown-doctest": "^0.7.0",
     "moment": "2.22.2",
     "moment-timezone": "0.5.17",
-    "time-grunt": "^0.3.1"
+    "time-grunt": "^0.3.1",
+    "gh-pages": "^1.2.0"
   }
 }
